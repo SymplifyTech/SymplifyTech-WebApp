@@ -34,7 +34,7 @@ function FreeTrialButton() {
         },
       }}
     >
-      Free Trial
+      Contact Us
     </Button>
   );
 }
