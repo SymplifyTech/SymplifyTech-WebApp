@@ -117,10 +117,10 @@ const Footer = () => {
 
         {/* Navigation Links */}
         <NavLinks>
-          <a href="#" className={css(linkStyles)}>Find passion</a>
-          <a href="#" className={css(linkStyles)}>Categories</a>
-          <a href="#" className={css(linkStyles)}>Skills</a>
-          <a href="#" className={css(linkStyles)}>Customer</a>
+          <a href="#" className={css(linkStyles)}>Our Services</a>
+          <a href="#" className={css(linkStyles)}>AI in Industry</a>
+          <a href="#" className={css(linkStyles)}>Case Studies</a>
+          <a href="#" className={css(linkStyles)}>About Us</a>
         </NavLinks>
 
         {/* Newsletter */}
