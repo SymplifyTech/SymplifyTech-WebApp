@@ -10,7 +10,7 @@ function EmailInput() {
     <Input
       id="find"
       type="text"
-      placeholder="Find your passion"
+      placeholder=""
       maxLength={6}
       name="Find"
       required
@@ -29,3 +29,4 @@ function EmailInput() {
 }
 
 export default EmailInput;
+
