@@ -20,10 +20,11 @@ function Logo() {
     <Link href="/" passHref>
       <StyledLogoLink>
         <Image
-          src="/logo.svg"
+          src="/symplifytech_cover.jpg"
+
           alt="Skillex Logo"
-          width="124px"
-          height="36px"
+          width="130px"
+          height="44px"
           style={{ cursor: 'pointer' }}
         />
       </StyledLogoLink>
