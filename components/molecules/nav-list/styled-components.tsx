@@ -60,7 +60,7 @@ export const StyledNavLink = styled('a', ({ $theme, $isActive }:any) => ({
     ':last-child': { borderBottom: '1px solid rgba(30,30,47,.0)' },
   },
   [$theme.mediaQuery.large]: {
-    marginRight: '2.5rem',
+    marginRight: '1.5rem',
     textAlign: 'center',
     display: 'inline-block',
     marginBottom: 0,
