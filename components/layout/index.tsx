@@ -20,10 +20,10 @@ function Layout({ children }: LayoutProps) {
     toggleDrawer,
     closeDrawer: () => setIsOpen(false),
     links: [
-      { id: 0, name: 'Find passion', url: '#find-passion' },
-      { id: 1, name: 'Categories', url: '#categories' },
-      { id: 2, name: 'Skills', url: '#skills' },
-      { id: 3, name: 'Customer', url: '#customer' },
+      { id: 0, name: 'Our Services', url: '#find-passion' },
+      { id: 1, name: 'AI in Industry', url: '#categories' },
+      { id: 2, name: 'Case Studies', url: '#skills' },
+      { id: 3, name: 'About Us', url: '#customer' },
     ],
   }), [isOpen, toggleDrawer]);
 
