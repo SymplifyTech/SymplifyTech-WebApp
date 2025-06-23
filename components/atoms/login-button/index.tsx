@@ -56,7 +56,7 @@ function LoginButton() {
         },
       })}
       >
-        Login
+       
       </a>
     </Link>
   );
