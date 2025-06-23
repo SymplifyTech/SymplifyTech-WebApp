@@ -1,30 +1,16 @@
 import React from 'react';
 import Link from 'next/link';
-import { Input } from 'baseui/input';
-import {
-  StyledGoLink, StyledInput, StyledInputContainer, StyledRoot,
-} from './styled-components';
+import styles from './EmailInput.module.css';
 
 function EmailInput() {
   return (
-    <Input
-      id="find"
-      type="text"
-      placeholder=""
-      maxLength={6}
-      name="Find"
-      required
-      endEnhancer={() => (
-        <Link href="/" passHref>
-          <StyledGoLink>Go</StyledGoLink>
-        </Link>
-      )}
-      overrides={{
-        Root: StyledRoot,
-        Input: StyledInput,
-        InputContainer: StyledInputContainer,
-      }}
-    />
+    <div className={styles.wrapper}>
+      <Link href="/" passHref>
+        <a className={styles.link}>
+          Book Consultation
+        </a>
+      </Link>
+    </div>
   );
 }
 
