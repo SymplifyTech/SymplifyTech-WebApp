@@ -2,11 +2,18 @@ import React from 'react';
 import { Button, SHAPE, SIZE } from 'baseui/button';
 
 function FreeTrialButton() {
+  const handleContactClick = () => {
+    const email = 'techsymplify@gmail.com';
+    const subject = 'Contact Us - Inquiry';
+    const body = 'Hello TechSymplify team,%0D%0A%0D%0AI would like to get in touch regarding...';
+    window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${body}`;
+  };
   return (
     <Button
       size={SIZE.compact}
       shape={SHAPE.pill}
       type="button"
+      onClick={handleContactClick}
       overrides={{
         BaseButton: {
           style: ({ $theme }) => ({
