@@ -2,6 +2,7 @@ import React from 'react';
 import { styled, useStyletron } from 'baseui';
 import { Button } from 'baseui/button';
 import { Input } from 'baseui/input';
+import { FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const FooterContainer = styled('footer', {
   width: '100%',
@@ -104,7 +105,14 @@ const Footer = () => {
           fontWeight: 700,
           marginRight: '64px',
         })}>
-          Skillex
+          <img
+      src="/logo .png" // Replace with the correct path to your PNG
+      alt=""
+      className={css({
+        height: '70px', // Adjust height as needed
+        width: '90px',
+      })}
+    />
           <span className={css({
             display: 'inline-block',
             width: '6px',
@@ -197,25 +205,46 @@ const Footer = () => {
             justifyContent: 'center',
             flexShrink: 0,
           })} />
-          <span>2021 Halo Lab. All rights reserved</span>
+          <span>2025 SymplifyTech Consultancy Pvt. Ltd. All rights reserved</span>
         </div>
-        <div className={css({
-          display: 'flex',
-          gap: '12px',
-        })}>
-          {['dribbble', 'twitter', 'instagram', 'youtube'].map((social) => (
-            <a
-              key={social}
-              href="#"
-              className={css({
-                ...socialLinkStyles,
-                width: '28px',
-                height: '28px',
-                fontSize: '12px',
-              })}
-            />
-          ))}
-        </div>
+        <div
+  className={css({
+    display: 'flex',
+    gap: '12px',
+  })}
+>
+  <a
+    href="https://www.linkedin.com/company/symplifytech/" // Replace with your LinkedIn profile URL
+    target="_blank"
+    rel="noopener noreferrer"
+    className={css({
+      ...socialLinkStyles,
+      width: '28px',
+      height: '28px',
+      fontSize: '16px',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    })}
+  >
+    <FaLinkedin />
+  </a>
+
+  <a
+    href="techsymplify@gmail.com" // Replace with your email address
+    className={css({
+      ...socialLinkStyles,
+      width: '28px',
+      height: '28px',
+      fontSize: '16px',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    })}
+  >
+    <FaEnvelope />
+  </a>
+</div>
       </BottomSection>
     </FooterContainer>
   );
