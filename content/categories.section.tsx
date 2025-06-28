@@ -66,7 +66,7 @@ function CategoriesSection() {
           [theme.mediaQuery.large]: { fontSize: '40px', marginBottom: '48px' },
         })}
         >
-          Unlimited access to 100+ instructors
+          Our Services
           <span style={{ fontFamily: '"Arial", sans-serif', color: '#97c680' }}>.</span>
         </h2>
       </div>
@@ -79,12 +79,12 @@ function CategoriesSection() {
           TabHighlight: { style: { height: '1px' } },
         }}
       >
-        <Tab key="all" overrides={tabOverrides} title="All categories" />
-        <Tab key="entertainment" overrides={tabOverrides} title="Entertainment" />
-        <Tab key="lifestyle" overrides={tabOverrides} title="Lifestyle" />
-        <Tab key="writing" overrides={tabOverrides} title="Writing" />
-        <Tab key="business" overrides={tabOverrides} title="Business" />
-        <Tab key="food" overrides={tabOverrides} title="Food" />
+        <Tab key="all" overrides={tabOverrides} title="All services" />
+        <Tab key="entertainment" overrides={tabOverrides} title="Gen AI" />
+        <Tab key="lifestyle" overrides={tabOverrides} title="Cloud" />
+        <Tab key="writing" overrides={tabOverrides} title="Digital Transformation" />
+        <Tab key="business" overrides={tabOverrides} title="MVP" />
+        <Tab key="food" overrides={tabOverrides} title="Staff Augmentation" />
       </Tabs>
       <FlexGrid
         className="category-flex"
