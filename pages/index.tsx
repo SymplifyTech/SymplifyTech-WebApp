@@ -6,6 +6,7 @@ import Section from '../components/atoms/section';
 import FindPositionSection from '../content/find-position.section';
 import CategoriesSection from '../content/categories.section';
 import CustomerSection from '../content/customer.section';
+import BlogsSection from '../content/blogs.section';
 
 
 const Home: NextPage = function () {
@@ -233,6 +234,7 @@ const Home: NextPage = function () {
     
       
       <CustomerSection />
+      <BlogsSection />
     </>
   );
 };
