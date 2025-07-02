@@ -137,7 +137,7 @@ const Footer = () => {
           marginRight: '64px',
         })}>
           <img
-            src="/logo.png" // Corrected image path, remove space
+            src="/logo .png" 
             alt="Logo"
             className={css({
               height: '70px',
