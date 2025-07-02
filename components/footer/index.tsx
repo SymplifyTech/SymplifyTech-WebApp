@@ -156,10 +156,11 @@ const Footer = () => {
 
         {/* Navigation Links */}
         <NavLinks>
+          <a href="#" className={css(linkStyles)}>Home</a>
           <a href="#" className={css(linkStyles)}>Our Services</a>
-          <a href="#" className={css(linkStyles)}>AI in Industry</a>
-          <a href="#" className={css(linkStyles)}>Case Studies</a>
-          <a href="#" className={css(linkStyles)}>About Us</a>
+          <a href="#" className={css(linkStyles)}>Our Process</a>
+          <a href="#" className={css(linkStyles)}>Testimonials</a>
+          <a href="#" className={css(linkStyles)}>Blogs</a>
         </NavLinks>
 
         {/* Newsletter */}
