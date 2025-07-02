@@ -77,45 +77,38 @@ const NavigationButton = styled(Button, {
 const testimonials = [
   {
     id: 1,
-    text: 'The platform is amazing and the customer support is top-notch. Highly recommended for anyone looking to improve their skills.',
-    name: 'Sarah Johnson',
-    role: 'UX Designer',
-    image: 'https://randomuser.me/api/portraits/women/44.jpg'
-  },
-  {
-    id: 2,
-    text: 'I\'ve tried many learning platforms, but this one stands out. The content is high quality and the interface is intuitive.',
-    name: 'Michael Chen',
-    role: 'Frontend Developer',
+    text: 'Partnering with SymplifyTech was the best decision we made for our digital transformation. Their team migrated our systems to the cloud with zero downtime and continued to provide exceptional support. Highly recommended!',
+    name: 'John M.',
+    role: 'CEO, MedTech Solutions',
     image: 'https://randomuser.me/api/portraits/men/32.jpg'
   },
   {
+    id: 2,
+    text: 'Our veterinary management platform wouldn\'t have scaled without the solid backend infrastructure and DevOps expertise from SymplifyTech. Their responsiveness and deep technical knowledge set them apart.',
+    name: 'Samantha R.',
+    role: 'CTO, VetEase',
+    image: 'https://randomuser.me/api/portraits/women/44.jpg'
+  },
+  {
     id: 3,
-    text: 'As a busy professional, I appreciate how easy it is to learn at my own pace. The courses are well-structured and engaging.',
-    name: 'Emily Rodriguez',
-    role: 'Product Manager',
-    image: 'https://randomuser.me/api/portraits/women/68.jpg'
+    text: 'We needed custom software for our e-learning platform, and SymplifyTech delivered beyond expectations — secure, fast, and intuitive. They\'re more than consultants; they\'re true technology partners.',
+    name: 'Rajiv S.',
+    role: 'Founder, EduNext',
+    image: 'https://randomuser.me/api/portraits/men/45.jpg'
   },
   {
     id: 4,
-    text: 'As a busy professional, I appreciate how easy it is to learn at my own pace. The courses are well-structured and engaging.',
-    name: 'Emily Rodriguez',
-    role: 'Product Manager',
+    text: 'SymplifyTech helped modernize our legacy systems and implement robust data analytics pipelines. They listened, adapted, and delivered quality every step of the way.',
+    name: 'Lisa T.',
+    role: 'Product Manager, GreenFarm Tech',
     image: 'https://randomuser.me/api/portraits/women/68.jpg'
   },
   {
     id: 5,
-    text: 'I\'ve tried many learning platforms, but this one stands out. The content is high quality and the interface is intuitive.',
-    name: 'Michael Chen',
-    role: 'Frontend Developer',
-    image: 'https://randomuser.me/api/portraits/men/32.jpg'
-  },
-  {
-    id: 6,
-    text: 'The platform is amazing and the customer support is top-notch. Highly recommended for anyone looking to improve their skills.',
-    name: 'Sarah Johnson',
-    role: 'UX Designer',
-    image: 'https://randomuser.me/api/portraits/women/44.jpg'
+    text: 'From IT strategy to cybersecurity audits, SymplifyTech is our go-to partner. Their attention to detail and proactive approach saved us from multiple compliance issues.',
+    name: 'Amar P.',
+    role: 'Director of IT, FinZen Global',
+    image: 'https://randomuser.me/api/portraits/men/65.jpg'
   },
 ];
 
