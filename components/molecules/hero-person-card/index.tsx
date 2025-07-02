@@ -94,17 +94,17 @@ function HeroPersonCard(props: { index: number, person: HeroPersonType }) {
               margin: 0,
               [theme.mediaQuery.small]: { fontSize: '30px' },
               [theme.mediaQuery.medium]: { fontSize: '36px' },
-              [theme.mediaQuery.large]: { fontSize: '50px' },
+              [theme.mediaQuery.large]: { fontSize: '15px' },
             })}
             >
-              {person.numberOfTopics}
+              {person.text}
               <br />
               <span className={css({
                 fontSize: '14px',
                 textTransform: 'uppercase',
               })}
               >
-                Topics
+               
               </span>
             </h2>
           </div>
