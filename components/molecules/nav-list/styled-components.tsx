@@ -1,6 +1,11 @@
 /* eslint-disable import/prefer-default-export */
 import { styled } from 'baseui';
 
+// ✅ Define the prop type
+type StyledNavLinkProps = {
+  $isActive: boolean;
+};
+
 export const StyledNav = styled('nav', ({ $theme }) => ({
   [$theme.mediaQuery.small]: {
     display: 'flex',
@@ -27,7 +32,8 @@ export const StyledNav = styled('nav', ({ $theme }) => ({
   },
 }));
 
-export const StyledNavLink = styled('a', ({ $theme, $isActive }:any) => ({
+// ✅ Apply the custom prop type
+export const StyledNavLink = styled<'a', StyledNavLinkProps>('a', ({ $theme, $isActive }) => ({
   color: $theme.colors.mono800,
   textDecoration: 'none',
   cursor: 'pointer',
