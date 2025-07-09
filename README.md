@@ -2,12 +2,49 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18+ 
+- npm or yarn or pnpm
+
+### Installation
+
+1. Clone this repository:
+```bash
+git clone https://github.com/your-username/project.git
+cd project
+```
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn
+# or
+pnpm install
+```
+3. Start the development server:
 ```bash
 npm run dev
 # or
 yarn dev
+# or
+pnpm dev
+```
+4. Build the project:
+```bash
+npm run build
+# or
+yarn build
+# or
+pnpm build
+```
+5. Export the project:
+```bash
+npm run export
+# or
+yarn export
+# or
+pnpm export
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
