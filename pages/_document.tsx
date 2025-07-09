@@ -1,17 +1,20 @@
-
 import * as React from 'react';
 import Document, {
-  Head, Html, Main, NextScript,
+  Html,
+  Head,
+  Main,
+  NextScript,
+  DocumentContext,
+  DocumentInitialProps,
 } from 'next/document';
-import { Server, Sheet } from 'styletron-engine-atomic';
+import { Server } from 'styletron-engine-atomic';
 import { Provider as StyletronProvider } from 'styletron-react';
 import styletron from '../lib/styletron';
 
-class MyDocument extends Document <{ stylesheets: Sheet[] }> {
-  static getInitialProps = async (ctx: any) => {
-    const renderPage = () => ctx.renderPage({
-     
-      enhanceApp: (App: any) => function (props: any) {
+class MyDocument extends Document<{ stylesheets: Array<{ css: string; attrs: { media: string; 'data-hydrate': string } }> }> {
+  static async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps & { stylesheets: any[] }> {
+    const page = await ctx.renderPage({
+      enhanceApp: (App: any) => function EnhanceApp(props: any) {
         return (
           <StyletronProvider value={styletron}>
             <App {...props} />
@@ -20,16 +23,21 @@ class MyDocument extends Document <{ stylesheets: Sheet[] }> {
       },
     });
 
-    const initialProps = await Document.getInitialProps({ ...ctx, ...renderPage });
+    const initialProps = await Document.getInitialProps(ctx);
     const stylesheets = (styletron as Server).getStylesheets() || [];
-    return { ...initialProps, stylesheets };
-  };
+
+    return {
+      ...initialProps,
+      ...page,
+      stylesheets,
+    };
+  }
 
   render() {
     return (
       <Html>
         <Head>
-          {this.props.stylesheets.map((sheet, index) => (
+          {(this.props as any).stylesheets.map((sheet: any, index: number) => (
             <style
               className="_styletron_hydrate_"
               dangerouslySetInnerHTML={{ __html: sheet.css }}
