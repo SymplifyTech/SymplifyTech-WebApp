@@ -35,7 +35,6 @@ function NavList() {
         </StyledNavLink>
       ))}
     </StyledNav>
-
   );
 }
 
